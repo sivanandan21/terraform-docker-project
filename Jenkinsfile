@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'AWS-Ubuntu-Agent' }
 
     environment {
         AWS_DEFAULT_REGION = 'ap-south-1'
